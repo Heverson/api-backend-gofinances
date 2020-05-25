@@ -7,6 +7,7 @@
   "database": "gostack_desafio06",
   "entities": ["./src/models/*.ts"],
   "migrations": ["./src/database/migrations/*.ts"],
+  "logging": false,
   "cli": {
     "migrationsDir": "./src/database/migrations"
   }
