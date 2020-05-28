@@ -37,8 +37,6 @@ class ImportTransactionsService {
 
     // ele vai retornar o que ocorreu na chamada end do parseCSV
     await new Promise(resolve => parseCSV.on('end', resolve));
-    console.log(transactions);
-    console.log(categories);
     const existentsCategories = await categoryRepositories.find({
       where: {
         title: In(categories),
